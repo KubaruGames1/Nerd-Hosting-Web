@@ -176,3 +176,44 @@ footer address {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) { 
+    .container {
+        padding: 10px; /* Reducir el padding en pantallas pequeñas */
+    }
+
+    header .header-content {
+        flex-direction: column; /* Apilar logo y título en vertical */
+        align-items: center; /* Centrar horizontalmente */
+    }
+
+    header .logo {
+        margin-bottom: 10px; /* Espacio entre el logo y el título */
+    }
+
+    header nav {
+        margin: 10px 0; /* Margen superior e inferior para la navegación */
+        flex-direction: column; /* Apilar botones en vertical */
+    }
+
+    header nav a {
+        margin: 5px 0; /* Espacio entre los botones */
+    }
+
+    #hero {
+        padding: 50px 0; /* Reducir el padding del hero */
+    }
+
+    #planes .planes-container {
+        flex-direction: column; /* Apilar planes en vertical */
+    }
+
+    .plan {
+        margin-bottom: 20px; /* Espacio entre los planes */
+    }
+
+    #caracteristicas .features-grid {
+        grid-template-columns: 1fr; /* Una columna para las características */
+    }
+}
